@@ -32,13 +32,13 @@ command -v genisoimage >/dev/null 2>&1 || {
     exit 5
 }
 
-command -v ./tools/cdi4dc >/dev/null 2>&1 || {
+command -v /app/tools/img4dc/cdi4dc/cdi4dc || {
     echo -e "$STARTRED""This script requires cdi4dc to be present in tools/ directory""$ENDRED" >&2
     echo -e "$STARTRED""See README for details.  Aborting script""$ENDRED" >&2
     exit 6
 }
 
-command -v ./tools/cdirip >/dev/null 2>&1 || {
+command -v /app/tools/cdirip/cdirip || {
     echo -e "$STARTRED""This script requires cdirip to be present in tools/ directory""$ENDRED" >&2
     echo -e "$STARTRED""See README for details.  Aborting script""$ENDRED" >&2
     exit 6
